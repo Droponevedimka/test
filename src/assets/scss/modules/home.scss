@@ -1,0 +1,43 @@
+@import "utils/vars";
+
+.home{
+    margin: 0;
+    padding: 0;    
+    height: auto;
+    width: 100%;    
+    max-width: $desktopWidth;        
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    color: #000000;
+ 
+    @media screen and (max-width: $tableWidth) {
+        height: auto; 
+        display: block;
+    }       
+   
+    &__body{
+        height: auto;
+        width: 100%;         
+        min-height: calc(100vh - 7.2em);
+        max-width: 1360px;
+        position: relative;       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;         
+
+        @media screen and (max-width: $tableWidth) {
+            flex-direction: column;
+            height: auto;            
+            padding: 0%;            
+            max-height: none;
+            border-bottom: none;            
+        }  
+
+
+ 
+    }
+}

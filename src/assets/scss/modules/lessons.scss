@@ -1,0 +1,143 @@
+@import "utils/vars";
+
+.lessons{
+    margin: 0;
+    padding: 0;    
+    height: auto;
+    width: 100%;    
+    max-width: $desktopWidth;        
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    color: #000000;
+ 
+    @media screen and (max-width: $tableWidth) {
+        height: auto; 
+        display: block;
+    }       
+   
+    &__container{
+        height: auto;
+        width: 95%;
+        margin: 5% 2.5%;   
+        max-width: 1360px;
+        position: relative;       
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;         
+
+        @media screen and (max-width: $tableWidth) {
+            flex-direction: column;
+            height: auto;            
+            padding: 0%;            
+            max-height: none;
+            border-bottom: none;            
+        }  
+
+        &--item{
+            position: relative;
+            width: 30%;
+            background: #FFFFFF;
+            border: 0.1em solid #DFDFDF;
+            box-sizing: border-box;
+            border-radius: 1em;
+            color: #001842;
+            overflow: hidden;
+            margin-bottom: 2em;
+            
+
+            &:hover{
+                filter: drop-shadow(-0.05em 0.2em 1em rgba(130, 79, 238, 0.35));
+            }
+
+            &-title,&-description{
+                margin: 0 5%;
+            }
+            
+            &-title{
+                width: 90%;
+                font-weight: bold;
+                font-size: 0.805em;     
+                line-height: 1.2em;     
+                margin-top: 3em;      
+            }
+
+            &-description{
+                width: 60%;  
+                opacity: 0.7;
+                font-size: 0.7em;  
+                line-height: 1.2em;
+                margin-top: 0.5em;    
+                       
+            }
+
+            &-img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                margin-top: 1.2em;
+            }
+
+            &-delete{
+                position: absolute;
+                right: 5%;
+                top: 5%;
+                width: 2em;
+                height: auto;
+                object-fit: contain;
+                cursor: pointer;
+            }
+           
+        }
+
+    }
+
+    &__bottom{
+        height: auto;
+        width: 95%;
+        margin: 5% 2.5%;   
+        max-width: 1360px;
+        position: relative;  
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &--pagination{
+            width: 27%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            &-arrow{
+                color: #FC2767;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            &-item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 2em;
+                width: 2em;
+                border-radius: 2em;
+                color: #8654EF;
+                border: 0.1em solid #8654EF;
+                cursor: pointer;
+                
+                &.active{
+                    color: #FC2767;
+                    border: 0.1em solid #FC2767;
+                    height: 2.5em;
+                    width: 2.5em;
+                }
+            }
+        }
+    }
+}

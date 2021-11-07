@@ -1,0 +1,59 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.top{
+    width: 100%;
+    height: 3.6em;
+    background: #EFEEF1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    &__container{
+        width: 100%;
+        max-width: 1360px;
+        padding: 0 2.5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &--left{
+
+            &-name{
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+            &-role{
+                font-size: 0.805em;
+            }
+        }
+
+        &--right{
+            width: 22%;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-self: flex-end;
+
+            &-add, &-btn{
+                border-radius: 2em;
+                font-size: 0.9em;
+                padding: 0.5em 1.25em;   
+                cursor: pointer;
+            }
+
+            &-add{                
+                background: linear-gradient(180deg, #EF54DF 0%, #D74366 100%);
+                             
+            }
+
+            &-btn{
+                background: linear-gradient(180deg, #8654EF 0%, #7343D7 100%);                
+            }
+        }
+    }
+}

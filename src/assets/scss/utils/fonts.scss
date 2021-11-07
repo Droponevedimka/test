@@ -1,0 +1,32 @@
+// Fonts here
+@font-face {
+    font-family: 'Euclid-Bold';
+    font-style: bold;
+    font-weight: 400;
+    src: url('/assets/fonts/Euclid/EuclidCircularA-Bold.otf'), /* IE9 Compat Modes */
+         url("/assets/fonts/Euclid/EuclidCircularA-Bold.otf?#iefix") format("embedded-opentype");         
+}
+
+@font-face {
+    font-family: 'Euclid-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Euclid/EuclidCircularA-Light.otf'), /* IE9 Compat Modes */
+         url("/assets/fonts/Euclid/EuclidCircularA-Light.otf?#iefix") format("embedded-opentype"); 
+}
+
+@font-face {
+    font-family: 'Euclid-Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Euclid/EuclidCircularA-Medium.otf'), /* IE9 Compat Modes */
+         url("/assets/fonts/Euclid/EuclidCircularA-Medium.otf?#iefix") format("embedded-opentype");  
+}
+
+@font-face {
+    font-family: 'Euclid-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Euclid/EuclidCircularA-Regular.otf'), /* IE9 Compat Modes */
+         url("/assets/fonts/Euclid/EuclidCircularA-Regular.otf?#iefix") format("embedded-opentype");   
+}
